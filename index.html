@@ -1,29 +1,43 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <meta charset="UTF-8">
     <title>Глобус Новости</title>
     <style>
-/* Здесь применяются стили CSS */
-body {
-  /* Применяем шрифт ко всему тексту на странице */
-  font-family: 'Times New Roman,', serif; 
-  font-size: 18px;
-}
+        /* Здесь применяются стили CSS */
+        body {
+            /* Рекомендуется: Используйте более чистый Sans-Serif для лучшей читабельности */
+            font-family: Arial, sans-serif; 
+            font-size: 18px;
+        }
 
-h1 {
-  /* Применяем другой шрифт к заголовку */
-  font-family: 'Arial', sans-serif;
-  color: #008080;
-}
-</style>
-  </head>
-  <body>
+        h1 {
+            /* Стиль заголовка - оставляем Arial */
+            font-family: Arial, sans-serif;
+            color: #008080;
+        }
+
+        /* Стиль для подзаголовка (заменяет старый тег <b>) */
+        .subtitle {
+            font-weight: bold;
+            display: block; /* Делает его блочным элементом, чтобы он начинался с новой строки */
+            margin-bottom: 15px;
+        }
+        
+        /* Делаем все ссылки в списке жирными через CSS */
+        ul li a {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
     <h1>Глобус Новости</h1>
-    <b>Ваш проверенный источник новостей</b>
+    <strong class="subtitle">Ваш проверенный источник новостей</strong>
     <ul>
-  <li><a href="news1.html"><b>"Цифровая усталость": Как социальные сети влияют на психическое здоровье и что с этим делать</b></a></li>
-  <li><a href="about.html">О нас</a></li>
-  <li><a href="services.html">Услуги</a></li>
-  <li><a href="contacts.html">Контакты</a></li>
-</ul>
-  </body>
+        <li><a href="news1.html">"Цифровая усталость": Как социальные сети влияют на психическое здоровье и что с этим делать</a></li>
+        <li><a href="#">Новость 2</a></li>
+        <li><a href="#">Новость 3</a></li>
+        <li><a href="#">Новость 4</a></li>
+    </ul>
+</body>
 </html>
